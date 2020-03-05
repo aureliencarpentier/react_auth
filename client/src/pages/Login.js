@@ -28,7 +28,7 @@ function Login() {
             }
         );
         if (result.status === 200) {
-            authContext.setToken(result.data);
+            authContext.setToken(result.data.data);
             setLoggedIn(true);
             console.log('Successfully logged in !', result);
         } else {
